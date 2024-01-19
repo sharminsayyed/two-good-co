@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif;
+
+}
+
+*::selection{
+    color:white;
+    background-color: black;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+#nav{
+    /* height:100px; */
+    width:100%;
+    position:fixed;
+    /* background-color: antiquewhite; */
+    z-index:99;
+    padding:25px;
+    display:flex;
+    align-items: flex-start; /* because they will stick to the top of website */
+    justify-content: space-between;
+}
+#nav1{
+    height:82px;
+    overflow:hidden; /* the 2nd part will be overflowed and hidden */
+}
+
+#nav svg{
+    display:block;
+}
+#nav #nav2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:40px;
+}
+
+#nav2 a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color:#333;
+    margin: 0 20px;
+    font-size: 12px;
+    font-weight: 530;
+}
+#icons{
+    padding:10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+#nav2 i{
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+#cursor{
+    height:160px;
+    width:160px;
+    border-radius:50%;
+    background-color: rgb(186, 208, 235);
+    /* background-color: red; */
+    position:fixed;
+    transform: translate(-50%,-50%) scale(0);
+}
+#page1{
+    min-height:100vh;
+    width:100%;
+    position:relative;
+    padding:0 1vw;
+    padding-top:20vh;
+
+}
+
+#page1 h1{
+    font-size: 15.4vw;
+    font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif;
+    text-transform: uppercase;
+    line-height: 14vw;
+    letter-spacing: -8px;
+}
+
+#video-container{
+    height:100vh;
+    width:100%;
+    background-color: grey;
+    margin-top:0 1vw;
+    position: relative;
+}
+
+#video-container video{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+#video-container #play{
+    padding:2vw 1.8vw;
+    background-color: black;
+    color:#fff;
+    font-size:1vw;
+    text-transform: uppercase;
+    position:fixed;
+    border-radius: 50%;
+    opacity:0;
+    scale:0;
+    font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif;
+
+}
+
+#page2{
+    min-height:100vh;
+    width: 100%;
+    position:relative;
+    display:flex;
+    align-items: center;
+    padding: 3vw 1vw;
+    justify-content: space-between;
+}
+
+#page2 .elem{
+    height:100%;
+    width:31%;
+    /* background-color: aqua; */
+    overflow:hidden;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .elem img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    scale:1.2;
+}
+
+
+#page2 .elem .dets{
+    height:50px;
+    border-radius: 50px;
+    width:70%;
+    position:absolute;
+    z-index:9;
+    background-color:#F5DFCF;
+    /* display: flex; */
+
+
+}
+
+#page2 .page2text{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:1vw;
+}
+
+#page2 .page2text p,h4 {
+    font-size: 0.8vw;
+}
+
+/* #page2 .elem .dets:hover{
+    height:200px;
+} */
+
+#page3{
+    min-height:140vh;
+    width:100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+}
+
+#page3 .child{
+    height:54vh;
+    width:38vw;
+    /* background-color: red; */
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imgtext p{
+    padding:0.5vw;
+    font-size: 1vw;
+    text-align: center;
+}
+    
+.child img{
+    height:100%;
+    display: flex;
+    justify-content: center;
+}
+
+#page4{
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:10vw;
+}
+
+#page4 h1{
+    font-size: 4vw;
+    text-align: center;
+}
+
+#page4 button{
+    padding:1.5vw 4vw;
+    border-radius:2vw;
+    background-color: black;
+    color:#fff;
+    border:none;
+}
+#page4 button:hover{
+    color:#baa4a4;
+}
+#page4 p{
+    text-align: center;
+}
+@media (max-width:600px)
+{
+
+    
+    #nav1{
+        height:75px;
+        /* overflow:hidden; /* the 2nd part will be overflowed and hidden */
+    }
+    
+    #nav svg{
+        /* display:block; */
+        height:80px;
+        width:80px
+    }
+
+    #nav #twogoodlogo{
+       height: 50px;
+       padding-top:10px;
+       margin-left:-20px;
+    }
+    #nav #nav2{
+        /* display:flex;
+        align-items: center;
+        justify-content: center;
+        gap:40px; */
+        padding:20px;
+    }   
+    
+    #nav2 a{
+        /* text-transform: uppercase;
+        text-decoration: none;
+        color:#333;
+        margin: 0 20px;
+        font-size: 12px;
+        font-weight: 530; */
+        display:none; /* imppppppt */
+    }
+    #icons{
+        padding:10px;
+        /* border-radius: 50px;
+        background-color: #F7F7F7; */
+    }
+    #nav2 i{
+        font-size: 20px;
+        /* margin: 0 20px; */
+        /* font-weight: 100; */
+    }
+    #page1{
+        /* min-height:100vh; */
+        min-height:70vh;    
+        width:100%;
+        /* position:relative; */
+        padding:0 3vw;
+        padding-top:25vh;
+    
+    }
+
+    #page1 h1{
+        font-size: 15.5vw;
+        /* font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif; */
+        /* text-transform: uppercase; */
+        /* line-height: 14vw; */
+        letter-spacing: -4px;
+    }
+    
+    #video-container{
+        height:25vh;
+        /* width:100%; */
+        /* background-color: grey; */
+        margin-top:3vw;
+        /* position: relative; */
+    }
+
+    #video-container #play{
+        padding:7.5vw 6vw;
+        /* background-color: black; */
+        /* color:#fff; */
+        font-size:4.5vw;
+        /* text-transform: uppercase; */
+        position:absolute;
+        top:50%;
+        left:50%;
+        /* border-radius: 50%; */
+        opacity:1;
+        scale:1;
+       transform: translate(-50%,-50%);
+        /* font-family: "Futura Now Headline", "Lucida Sans", Tahoma, sans-serif; */
+    }
+
+    #page2{
+        /* min-height:100vh; */
+        /* width: 100%; */
+        /* position:relative; */
+        /* display:flex; */
+        /* align-items: center; */
+        padding: 5vw 3vw;
+        flex-direction: column; 
+        /* justify-content: space-between; */
+        /* background-color: red; */
+    }
+
+    
+    #page2 .elem{
+        /* height:100%; */
+        width:100%;
+        /* background-color: aqua; */
+        /* overflow:hidden; */
+        margin-bottom: 8vw;
+    }
+
+    #page2 .elem img{
+        height:100%;
+        width:100%;
+        /* object-fit: cover; */
+        /* scale:1.2; */
+    }
+
+    #page3{
+        min-height:68vh;
+        width:100%;
+        /* position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap:wrap; */
+    }
+    
+    #page3 .child{
+        height:20vh;
+        width:40vw;
+        /* background-color: red; */
+        /* position:relative; */
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+    }
+    
+    #imgtext p{
+        /* padding:0.5vw; */
+        font-size: 3vw;
+        /* text-align: center; */
+    }
+
+    #page4 h1{
+        font-size: 5.5vw;
+        /* text-align: center; */
+    }
+
+    #page4 button{
+        padding:4vw 9vw;
+        border-radius:6vw;
+        /* background-color: black; */
+        /* color:#fff; */
+        /* border:none; */
+    }
+}
